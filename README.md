@@ -1,7 +1,7 @@
 # Portfolio
 
 soyeon`s portfolio page   
-경력사항과 프로젝트를 관리한다.   
+경력사항과 프로젝트를 관리한다.     
 
 
 ## 스택 ( 기술 )
