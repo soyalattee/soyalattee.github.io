@@ -21,42 +21,82 @@
   <body>
     <header class="nav">
       <div class="logo">
-        <img src="favicon.png" alt="logo" />
-        <p class="logo--title">Soya</p>
+        <img class="logo" src="img/favicon.png" alt="logo" />
+        <h1 class="title">SoYa</h1>
       </div>
-      <div class="nav--category">
-        <button class="category--btn">Home</button>
-        <button class="category--btn">About</button>
-        <button class="category--btn">Skills</button>
-        <button class="category--btn">Works</button>
-        <button class="category--btn">Contact</button>
+      <div class="nav__category">
+        <button class="category__btn">Home</button>
+        <button class="category__btn">About</button>
+        <button class="category__btn">Skills</button>
+        <button class="category__btn">Works</button>
+        <button class="category__btn">Contact</button>
       </div>
     </header>
     <section class="home">
-      <div class="home--profile">
-        <img src="#" alt="" />
+      <div class="home__profile">
+        <div class="profile__img">
+          <img id="photo"src="img/profile.jpg" alt="" />
+          <img id="leaf" src="img/profile_deco.png" alt="" />
+        </div>
+
+        <h1>Hello, <br>I`m a tech early adopter</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates,
-          voluptate.
+          Front-end developer who got interested in variable new tech in web programming field including Front-end and Back-end.
         </p>
       </div>
-      <div class="home--content">
-        <p class="content">
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-          totam quisquam laboriosam ratione error. Qui."
-        </p>
-        <button class="content--btn">Contact</button>
+      <div class="home__content">
+        <div class="content"><h1 class="title">Career</h1>
+          <ul>
+            <li class="content__box">
+              <div class="box_img">
+                <img class="logo" src="img/favicon.png" alt="logo" />
+              </div>
+              <div class="box_desc">
+                <h2>Neowiz</h2>
+                <p>Front-end Developer</p>
+                <p>2020 January - now</p>
+              </div>
+            </li>
+          </ul>
+      </div>
+        <div class="content"><h1 class="title">Education</h1>
+          <ul>
+            <li class="content__box"> 
+              <div class="box_img">
+                <img class="logo" src="img/favicon.png" alt="logo" />
+              </div>
+              <div class="box_desc">
+                <h2>Neowiz</h2>
+                <p>Front-end Developer</p>
+                <p>2020 January - now</p>
+              </div>
+            </li>
+            <li class="content__box">
+              <div class="box_img">
+                <img class="logo" src="img/favicon.png" alt="logo" />
+              </div>
+              <div class="box_desc">
+                <h2>Sookmyung Women`s University</h2>
+                <p>Computer Science</p>
+                <p>2014 March - 2019 August</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="content__btn">Contact</button>
+      </div>
+        
       </div>
     </section>
     <section class="about">
-      <div class="section--title">About me</div>
-      <div class="about--content">
+      <div class="section__title"><p>About me</p></div>
+      <div class="about__content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
         perferendis maiores voluptas sequi aspernatur numquam. Facere quibusdam
         quas, nemo minus facilis veritatis nulla, molestiae quasi iusto unde
         animi quos blanditiis!
       </div>
-      <div class="about--fields">
+      <div class="about__fields">
         <div class="field">
           <img src="#" alt="field1" />
           <p class="content">
@@ -72,15 +112,15 @@
           </p>
         </div>
       </div>
-      <div class="about--information">
+      <div class="about__information">
         <div class="field">
-          <p class="field--title">Education</p>
+          <p class="field__title">Education</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel.
           </p>
         </div>
         <div class="field">
-          <p class="field--title">Career</p>
+          <p class="field__title">Career</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel.
           </p>
@@ -88,6 +128,7 @@
       </div>
     </section>
     <section class="skills">
+      <div class="section__title"><p>Skills</p></div>
       <div class="skillbox">
         <ul>
           <li class="skill"><p class="title">Javascript</p><div class="graphbox">찾아보자 퍼센트바</div></li>
@@ -97,10 +138,38 @@
           <li class="skill"><p class="title">Javascript</p><div class="graphbox">찾아보자 퍼센트바</div></li>
         </ul>
       </div>
-        <div class="otherbox"><p class="title">etc</p> <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat reiciendis maiores earum harum dignissimos rerum adipisci aliquid praesentium voluptates!</p></div>
+        <div class="otherbox"><p class="title">etc</p> 
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="works"></section>
-    <footer class="contact"></footer>
+    <section class="works">
+      <div class="section__title"><p>Works</p></div>
+      <div class="category">
+        <button class="category__btn">All</button>
+        <button class="category__btn">Front-end</button>
+        <button class="category__btn">Back-end</button>
+        <button class="category__btn">Etc</button>
+      </div>
+      <ul class="worklist">
+        <li class="work"><p class="name">todolist</p><img src="favicon.png" alt=""></li>
+      </ul>
+    </section>
+    <footer class="contact">
+      <div class="section__title"><p>Contact</p></div>
+      <div class="contact__contents">
+        <p>blah blah</p>
+      </div>
+      <ul class="icon">
+        <li><img src="" alt="깃허브"></li>
+        <li><img src="" alt="블로그"></li>
+      </ul>
+    </footer>
   </body>
 </html>
