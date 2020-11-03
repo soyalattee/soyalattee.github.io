@@ -4,6 +4,7 @@
   --color-light: #aadce6;
   --color-black: #052227;
   --color-gray: #0a414b;
+  --color-gray-light: #e6eef0;
   --color-white: #fefefe;
   --color-yellow: #ea8d00;
   --color-yellow-light: #ffbd60;
@@ -289,4 +290,98 @@ img.logo {
 }
 ul > h2 {
   color: var(--color-yellow-light);
+}
+
+/* works */
+.works {
+  padding: 0;
+  margin: 5rem;
+}
+.category .category__btn {
+  color: var(--color-black);
+  border: solid 1px var(--color-dark);
+  border-radius: 5%;
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+.category__btn span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.worklist {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.worklist .work {
+  display: inline-block;
+  position: relative;
+  margin: 0.3rem;
+  width: 20rem;
+  height: 24rem;
+  background-color: var(--color-gray-light);
+}
+
+a .work__info {
+  display: none;
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a img {
+  width: 20rem;
+  height: 20rem;
+}
+.work__detail {
+  /* display: none; */
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: var(--color-yellow-light);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.work__detail .detail__url {
+  flex-grow: 1;
+}
+.work__detail .detail__info {
+  height: 80%;
+  flex-grow: 2;
+  border-left: solid 2px var(--color-dark);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detail__info div,
+.detail__info h1 {
+  text-align: start;
+  padding-bottom: 1rem;
+  color: var(--color-gray);
+}
+.detail__info span {
+  font-weight: 900;
+  color: var(--color-gray);
+}
+.detail__info p {
+  display: inline-block;
+}
+
+/* footer */
+footer {
+  background-color: var(--color-black);
+  margin-top: 4rem;
+}
+footer .section__title > h1,
+footer .section__title > p {
+  color: var(--color-white);
 }
