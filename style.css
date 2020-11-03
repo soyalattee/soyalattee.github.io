@@ -3,6 +3,7 @@
   --color-dark: #007c91;
   --color-light: #aadce6;
   --color-black: #052227;
+  --color-gray: #0a414b;
   --color-white: #fefefe;
   --color-yellow: #ea8d00;
   --color-yellow-light: #ffbd60;
@@ -71,8 +72,10 @@ img.logo {
   align-items: center;
   cursor: pointer;
 }
-.title {
+.title,
+.percentage {
   color: var(--color-white);
+  font-size: var(--font-large);
 }
 .category__btn {
   font-size: var(--font-mid);
@@ -210,4 +213,80 @@ img.logo {
 /* skills */
 .skills {
   background-color: var(--color-yellow-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillbox {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-black);
+  width: 80%;
+  margin: 2rem;
+}
+.skillbox__skill {
+  flex-grow: 3;
+  padding: 2rem;
+}
+.skillbox__other {
+  flex-grow: 2;
+  padding: 2rem;
+  background-color: var(--color-gray);
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+.skill__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skill__desc > span,
+.skillbox__other > ul > li {
+  color: var(--color-white);
+}
+.skillbox__skill > ul {
+  padding: 2rem 4rem;
+}
+.graph__var {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 1rem;
+  background-color: var(--color-gray);
+}
+.graph__value {
+  height: 1rem;
+  background-color: var(--color-dark);
+}
+/* skills value */
+#js .graph__value {
+  width: 90%;
+}
+#ts .graph__value {
+  width: 70%;
+}
+#react .graph__value {
+  width: 80%;
+}
+#html .graph__value {
+  width: 85%;
+}
+#java .graph__value {
+  width: 85%;
+}
+#spring .graph__value {
+  width: 70%;
+}
+.skillbox__other > ul {
+  height: 80%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+ul > h2 {
+  color: var(--color-yellow-light);
 }
