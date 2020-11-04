@@ -82,8 +82,19 @@ img.logo {
   font-size: var(--font-mid);
   font-weight: bold;
   color: var(--color-white);
-  padding-right: 2rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
+}
+.category__btn.active {
+  border: solid 1px var(--color-white);
+  border-radius: 4px;
+}
+.category__btn.active {
+  transform: 0;
+}
+.category__btn:not(.active):hover {
+  transform: scale(1.1);
+  transition: all 300ms ease;
 }
 /* Section1 home */
 .home {
