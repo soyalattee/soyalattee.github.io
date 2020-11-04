@@ -5,6 +5,7 @@
   --color-black: #052227;
   --color-gray: #0a414b;
   --color-gray-light: #e6eef0;
+  --color-gray-shadow: #b7c4c721;
   --color-white: #fefefe;
   --color-yellow: #ea8d00;
   --color-yellow-light: #ffbd60;
@@ -36,7 +37,6 @@ h1 {
 h2 {
   font-size: var(--font-mid);
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@ img.logo {
   align-items: center;
   padding: 2rem;
 }
-.icon {
+.field .icon {
   width: 10rem;
   height: 10rem;
   text-align: center;
@@ -329,9 +329,12 @@ ul > h2 {
   background-color: var(--color-gray-light);
 }
 
+.worklist .work__info:hover {
+  background-color: var(--color-gray-shadow);
+}
 a .work__info {
-  display: none;
-  /* position: absolute; */
+  /* display: none; */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -377,11 +380,30 @@ a img {
 }
 
 /* footer */
-footer {
+.contact {
   background-color: var(--color-black);
   margin-top: 4rem;
 }
 footer .section__title > h1,
 footer .section__title > p {
   color: var(--color-white);
+}
+.section__title {
+  padding-top: 0;
+}
+.contact__contents p {
+  color: var(--color-white);
+}
+.contact__contents > p:first-child {
+  margin-bottom: 1rem;
+}
+.contact .icon {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.contact .icon i {
+  color: var(--color-white);
+  font-size: var(--font-large);
+  padding: 1rem;
 }
