@@ -5,7 +5,7 @@
   --color-black: #052227;
   --color-gray: #0a414b;
   --color-gray-light: #e6eef0;
-  --color-gray-shadow: #b7c4c721;
+  --color-gray-shadow: #97a5a821;
   --color-white: #fefefe;
   --color-yellow: #ea8d00;
   --color-yellow-light: #ffbd60;
@@ -329,15 +329,23 @@ ul > h2 {
   background-color: var(--color-gray-light);
 }
 
-.worklist .work__info:hover {
+.work__info:hover {
   background-color: var(--color-gray-shadow);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 a .work__info {
   /* display: none; */
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 a img {
   width: 20rem;
